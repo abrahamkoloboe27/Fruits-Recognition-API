@@ -2,11 +2,9 @@ import keras
 import numpy as np
 import logging
 from fastapi import FastAPI, UploadFile, File
-from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import os
 import shutil
-from prometheus_fastapi_instrumentator import Instrumentator 
 
 
 # Set up logging
@@ -32,16 +30,6 @@ app = FastAPI(
 )
 image_size = (100, 100)
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-
-Instrumentator().instrument(app).expose(app)
 
 def load_model():
     global model

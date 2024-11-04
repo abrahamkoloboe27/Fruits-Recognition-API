@@ -4,5 +4,4 @@ uvicorn
 numpy 
 keras
 tensorflow
-prometheus-fastapi-instrumentator==1.1.1
 python-multipart
