@@ -5,6 +5,8 @@ from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import JSONResponse
 import os
 import shutil
+import warnings
+warnings.filterwarnings("ignore")
 
 # Configuration du logging
 logging.basicConfig(
