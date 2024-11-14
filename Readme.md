@@ -106,9 +106,11 @@ FastAPI génère automatiquement une documentation interactive accessible via :
 
 - **Swagger UI** : [http://127.0.0.1:8080/docs](http://127.0.0.1:8080/docs)
 
-![Swagger UI](video/demo.gif)
+![Swagger UI](video/doc.gif)
 
 - **Redoc** : [http://127.0.0.1:8080/redoc](http://127.0.0.1:8080/redoc)
+
+![Redoc](video/redoc.gif)
 
 ## Déploiement
 
