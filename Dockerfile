@@ -11,8 +11,8 @@ WORKDIR /app
 
 # Install the dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir --upgrade pip
-RUN pip install  -r requirements.txt
+RUN pip install uv
+RUN uv pip install  -r requirements.txt
 
 # Copy the rest of the application code
 COPY app.py /app
